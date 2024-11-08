@@ -54,4 +54,9 @@ export class RegisterComponent implements OnInit {
     this.registerData = { name: '', email: '', password: '' };
     this.errors = {};
   }
+
+
+    navigateToLogin() {
+    this.router.navigate(['/login']);
+  }
 }

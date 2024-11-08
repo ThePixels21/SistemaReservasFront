@@ -1,72 +1,89 @@
-.custom-dialog-content {
-    padding: 1rem;
-  }
-  
-  .custom-field {
-    margin-bottom: 1rem;
-  }
-  
-  .custom-input,
-  .custom-password,
-  .custom-calendar,
-  .custom-dropdown {
-    width: 100%;
-    padding: 0.5rem;
-    border-radius: 5px;
-  }
-  
-  .custom-button {
-    width: 100%;
-    background-color: #ffc107;
-    border: none;
-    color: #fff;
-    font-weight: bold;
-    text-transform: uppercase;
-    padding: 0.75rem;
-    transition: background-color 0.3s ease;
-  
-    &:hover {
-      background-color: #e0a800;
-    }
-  }
-  
-  .p-dialog {
-    .ui-g {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-    }
-  }
-  
-  .image-upload-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  
-    .image-preview img {
-      max-width: 100px;
-      margin-bottom: 1rem;
-    }
-  
-    p-button {
-      width: 100%;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .p-dialog {
-      width: 100% !important;
-      .ui-g {
-        flex-direction: column;
-      }
-  
-      .custom-field {
-        margin-bottom: 1rem;
-      }
-    }
-  
-    .custom-dialog-content {
-      padding: 0.5rem;
-    }
-  }
-  
+/* Centrar el contenedor de login */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  /* Altura completa de la pantalla */
+  padding: 20px;
+  background-color: #f4f4f9;
+  /* Fondo suave */
+}
+
+/* Estilo para el título */
+.login-container h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Formulario de login */
+.login-container form {
+  width: 100%;
+  max-width: 400px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para el grupo de formulario */
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Estilos para etiquetas y campos de entrada */
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.form-group .form-control.custom-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+
+.form-group .form-control.custom-input:focus {
+  border-color: #ffcc00;
+  /* Color de enfoque en el borde */
+  box-shadow: 0 0 5px rgba(255, 204, 0, 0.5);
+  /* Sombra */
+}
+
+/* Estilo para mensajes de error */
+.p-error {
+  color: #d9534f;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+/* Botón personalizado */
+.custom-button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #ffcc00;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.custom-button:hover {
+  background-color: #ffb300;
+}
+
+/* Barra de progreso */
+p-progressBar {
+  margin-top: 15px;
+  width: 100%;
+}
