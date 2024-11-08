@@ -1,0 +1,42 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding-top: 20px;
+  }
+  
+  .header {
+    display: flex;
+  }
+  
+  .sidenav {
+    flex: 0 0 auto;
+    height: 100%;
+    display: flex; /* Añadido */
+    justify-content: center; /* Alinea los elementos horizontalmente al centro */
+   
+    align-items: center; /* Alinea los elementos verticalmente al centro */
+    margin-right: 10px;
+}
+  
+  .head {
+    flex-grow: 1;
+    min-height: 60px;
+
+    align-items: center;
+  }
+
+  .contenedor-router {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  
+
+  .spinner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+  }
+  

@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="header">
+    <div class="head">
+      <app-header [ussIdSesion]="ussIdSesion"></app-header>
+    </div>
+  </div>
+  <div class="card contenedor-router">
+    <!-- <div *ngIf="loadingPro" class="spinner-container">
+        <p-progressSpinner ariaLabel="loading"></p-progressSpinner>
+      </div> -->
+    <router-outlet></router-outlet>
+  </div>
+</div>

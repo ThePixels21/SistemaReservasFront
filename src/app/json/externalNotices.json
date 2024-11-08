@@ -1,0 +1,116 @@
+//Esta data es para la empresa con el nit 800020256
+//http://localhost:7001/JADM0079B/api/notices/external?notTi=1&perId=2&estMost=1&tdcTd=NI&empNd=800020256
+
+{
+    "data": [
+        {
+            "id": 1,
+            "title": "Nuevo lanzamiento de producto X",
+            "description": "Descubre nuestro Ãºltimo producto revolucionario",
+            "startDate": "2024-05-10",
+            "endDate": "2024-05-15",
+            "imageCliCode": "https://pbs.twimg.com/profile_images/1417859543099449349/VJOjDcLU_400x400.png",
+            "stateId": 1,
+            "sourceCliCode": "https://ejemplo.com/video1.mp4",
+            "typeId": 1,
+            "profileId": 1
+        },
+        {
+            "id": 2,
+            "title": "Se incrementa salario ",
+            "description": "Sucedieron acontecimientos importantes",
+            "startDate": "2024-05-10",
+            "endDate": "2024-05-15",
+            "imageCliCode": "https://pbs.twimg.com/profile_images/1417859543099449349/VJOjDcLU_400x400.png",
+            "stateId": 1,
+            "sourceCliCode": "https://ejemplo.com/video1.mp4",
+            "typeId": 1,
+            "profileId": 1
+        },
+        {
+            "id": 3,
+            "title": "Se incrementa salario ",
+            "description": "Sucedieron acontecimientos importantes",
+            "startDate": "2024-05-10",
+            "endDate": "2024-05-15",
+            "imageCliCode": "https://pbs.twimg.com/profile_images/1417859543099449349/VJOjDcLU_400x400.png",
+            "stateId": 1,
+            "sourceCliCode": "https://ejemplo.com/video1.mp4",
+            "typeId": 1,
+            "profileId": 1
+        },
+        {
+            "id": 4,
+            "title": "Se incrementa salario ",
+            "description": "Sucedieron acontecimientos importantes",
+            "startDate": "2024-05-10",
+            "endDate": "2024-05-15",
+            "imageCliCode": "https://pbs.twimg.com/profile_images/1417859543099449349/VJOjDcLU_400x400.png",
+            "stateId": 1,
+            "sourceCliCode": "https://ejemplo.com/video1.mp4",
+            "typeId": 1,
+            "profileId": 1
+        },
+        {
+            "id": 5,
+            "title": "Se incrementa salario ",
+            "description": "Sucedieron acontecimientos importantes",
+            "startDate": "2024-05-10",
+            "endDate": "2024-05-15",
+            "imageCliCode": "https://pbs.twimg.com/profile_images/1417859543099449349/VJOjDcLU_400x400.png",
+            "stateId": 1,
+            "sourceCliCode": "https://ejemplo.com/video1.mp4",
+            "typeId": 1,
+            "profileId": 1
+        },
+        {
+            "id": 6,
+            "title": "Se incrementa salario ",
+            "description": "Sucedieron acontecimientos importantes",
+            "startDate": "2024-05-10",
+            "endDate": "2024-05-15",
+            "imageCliCode": "https://pbs.twimg.com/profile_images/1417859543099449349/VJOjDcLU_400x400.png",
+            "stateId": 1,
+            "sourceCliCode": "https://ejemplo.com/video1.mp4",
+            "typeId": 1,
+            "profileId": 1
+        },
+        {
+            "id": 7,
+            "title": "Se incrementa salario ",
+            "description": "Sucedieron acontecimientos importantes",
+            "startDate": "2024-05-10",
+            "endDate": "2024-05-15",
+            "imageCliCode": "https://pbs.twimg.com/profile_images/1417859543099449349/VJOjDcLU_400x400.png",
+            "stateId": 1,
+            "sourceCliCode": "https://ejemplo.com/video1.mp4",
+            "typeId": 1,
+            "profileId": 1
+        },
+        {
+            "id": 8,
+            "title": "Se incrementa salario ",
+            "description": "Sucedieron acontecimientos importantes",
+            "startDate": "2024-05-10",
+            "endDate": "2024-05-15",
+            "imageCliCode": "https://pbs.twimg.com/profile_images/1417859543099449349/VJOjDcLU_400x400.png",
+            "stateId": 1,
+            "sourceCliCode": "https://ejemplo.com/video1.mp4",
+            "typeId": 1,
+            "profileId": 1
+        },
+        {
+            "id": 9,
+            "title": "Se incrementa salario ",
+            "description": "Sucedieron acontecimientos importantes",
+            "startDate": "2024-05-10",
+            "endDate": "2024-05-15",
+            "imageCliCode": "https://pbs.twimg.com/profile_images/1417859543099449349/VJOjDcLU_400x400.png",
+            "stateId": 1,
+            "sourceCliCode": "https://ejemplo.com/video1.mp4",
+            "typeId": 1,
+            "profileId": 1
+        }
+    ],
+    "message": "Noticias filtradas encontradas."
+}

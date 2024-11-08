@@ -1,0 +1,72 @@
+.custom-dialog-content {
+    padding: 1rem;
+  }
+  
+  .custom-field {
+    margin-bottom: 1rem;
+  }
+  
+  .custom-input,
+  .custom-password,
+  .custom-calendar,
+  .custom-dropdown {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 5px;
+  }
+  
+  .custom-button {
+    width: 100%;
+    background-color: #ffc107;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0.75rem;
+    transition: background-color 0.3s ease;
+  
+    &:hover {
+      background-color: #e0a800;
+    }
+  }
+  
+  .p-dialog {
+    .ui-g {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+  
+  .image-upload-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    .image-preview img {
+      max-width: 100px;
+      margin-bottom: 1rem;
+    }
+  
+    p-button {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .p-dialog {
+      width: 100% !important;
+      .ui-g {
+        flex-direction: column;
+      }
+  
+      .custom-field {
+        margin-bottom: 1rem;
+      }
+    }
+  
+    .custom-dialog-content {
+      padding: 0.5rem;
+    }
+  }
+  

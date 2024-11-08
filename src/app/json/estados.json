@@ -1,0 +1,17 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "description": "Activa"
+        },
+        {
+            "id": 2,
+            "description": "Inactiva"
+        },
+        {
+            "id": 3,
+            "description": "Eliminada"
+        }
+    ],
+    "message": "Estados encontrados."
+}

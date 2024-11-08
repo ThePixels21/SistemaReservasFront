@@ -1,0 +1,13 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "description": "Noticias"
+        },
+        {
+            "id": 2,
+            "description": "Notificacion"
+        }
+    ],
+    "message": "Tipos de noticias encontrados."
+}

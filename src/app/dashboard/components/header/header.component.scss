@@ -1,0 +1,32 @@
+:host ::ng-deep{
+    .menu a{
+        text-decoration: none;
+    }
+
+    .p-element {
+     margin-top: 5px;
+    }
+
+   
+    
+}
+
+.navbar {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    padding: 20px;
+}
+.navbar .nav-item {
+    
+    margin-right: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.btn-link 
+{
+    text-decoration: none;
+    color: rgb(0, 0, 0, 0.65) ;
+}
