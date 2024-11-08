@@ -17,7 +17,7 @@ export class AuthService extends BaseService {
 
   // Método para registrar usuarios
   register(userData: any): Observable<any> {
-    const headers = this.getAuthHeaders(); // Obteniendo encabezados del BaseService
+    const headers = this.getAuthHeaders();
     return this.http.post(`${this.baseUrl}/`, userData, { headers });
   }
 
@@ -27,7 +27,7 @@ export class AuthService extends BaseService {
     const body = {
       username: credentials.username,
       password: credentials.password,
-      grant_type: null, // Según el esquema dado en FastAPI
+      grant_type: null,
       scope: '',
       client_id: null,
       client_secret: null
@@ -47,7 +47,7 @@ export class AuthService extends BaseService {
 
   // Verificar si el usuario está autenticado
   isAuthenticated(): boolean {
-    return !!this.getToken();
+    return !!this.getToken();  // Retorna true si existe el token
   }
 
   // Cerrar sesión

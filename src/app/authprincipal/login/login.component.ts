@@ -19,25 +19,27 @@ export class LoginComponent implements OnInit {
 
   ngOnInit(): void {}
 
+  // Método para manejar el login
   onLogin(): void {
-    this.loading = true;
+    console.log("login");
+    this.loading = true; // Establecer loading en true mientras se hace la solicitud
     this.authService.login(this.loginData).subscribe(
       (response) => {
-        this.loading = false;
-        this.authService.storeToken(response.access_token); // Guardar token
+        this.loading = false; // Detener loading cuando se recibe respuesta
+        this.authService.storeToken(response.access_token); // Guardar el token
         alert('Inicio de sesión exitoso');
-        this.router.navigate(['/dashboard']); // Redirigir después de iniciar sesión
+        this.router.navigate(['/dashboard']); // Redirigir al dashboard
       },
       (error) => {
-        this.loading = false;
-        this.errors = error.error;
+        this.loading = false; // Detener loading si ocurre un error
+        this.errors = error.error; // Mostrar los errores en la interfaz
         alert('Error en el inicio de sesión');
       }
     );
   }
 
-
-    navigateToRegister() {
-    this.router.navigate(['/register']);
+  // Método para redirigir a la página de registro
+  navigateToRegister() {
+    this.router.navigate(['/authprincipal/register']);
   }
 }
