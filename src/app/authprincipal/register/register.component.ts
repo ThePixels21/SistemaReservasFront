@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from 'src/app/services/auth/auth.service'; // El servicio de autenticación
 import { Router } from '@angular/router'; // Para redirigir después del registro
+import { MessageService } from 'primeng/api';
 
 @Component({
   selector: 'app-register',
@@ -18,7 +19,9 @@ export class RegisterComponent implements OnInit {
   errors: any = {};
   loading: boolean = false;
 
-  constructor(private authService: AuthService, private router: Router) {}
+  constructor(private authService: AuthService, private router: Router,
+    private messageService: MessageService
+  ) {}
 
   ngOnInit(): void {}
 
@@ -45,13 +48,14 @@ export class RegisterComponent implements OnInit {
     this.authService.register(userData).subscribe(
       (response) => {
         this.loading = false;
-        alert('Registro exitoso');
+        // alert('Registro exitoso');
+        this.messageService.add({severity: 'success', summary: 'info', detail:'Registro de usuario exitoso'})
         this.router.navigate(['/login']); // Redirigir al login después del registro
       },
       (error) => {
         this.loading = false;
         this.errors = error.error;
-        alert('Error al registrarse');
+        this.messageService.add({severity: 'error', summary: 'Error', detail:'Registro de usuario erroneo'})
       }
     );
   }

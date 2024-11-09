@@ -1,8 +1,9 @@
 <div class="espacios-container">
     <p-toast></p-toast>
   <div class="card" *ngFor="let espacio of espacios">
-    <h3>{{ espacio.type }}</h3>
-    <p><strong>Capacidad:</strong> {{ espacio.capacity }}</p>
+      <h3>{{ espacio.type }}</h3>
+      <h3>ID: {{ espacio.id }}</h3>
+      <p><strong>Capacidad:</strong> {{ espacio.capacity }}</p>
     <p><strong>Tarifa por hora:</strong> {{ espacio.hourlyRate }}</p>
     <!-- no muestra el estado porque es de schedules -->
     
