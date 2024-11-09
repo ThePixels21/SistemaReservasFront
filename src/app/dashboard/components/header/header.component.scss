@@ -1,32 +1,62 @@
-:host ::ng-deep{
-    .menu a{
-        text-decoration: none;
-    }
-
-    .p-element {
-     margin-top: 5px;
-    }
-
-   
-    
-}
-
 .navbar {
-    background-color: #f8f9fa;
-    border: 1px solid #dee2e6;
-    border-radius: 10px;
-    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #3c7744;
+    /* Azul para la barra de navegación */
+    color: white;
 }
-.navbar .nav-item {
-    
-    margin-right: 10px;
-    border-radius: 10px;
+
+.navbar h2,
+.navbar h3 {
+    margin: 0;
+}
+
+.navbar-left h2 {
+    font-size: 20px;
+}
+
+.navbar-center h3 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar-right button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 15px;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+.navbar-right button:hover {
+    color: #ffdd57;
+    /* Color de hover */
+}
+
+.btn-link {
+    text-decoration: none;
+    color: inherit;
+    padding: 0;
+    font-weight: bold;
+}
+
+.navbar-left,
+.navbar-center,
+.navbar-right {
+    flex: 1;
     display: flex;
     align-items: center;
 }
 
-.btn-link 
-{
-    text-decoration: none;
-    color: rgb(0, 0, 0, 0.65) ;
+.navbar-center {
+    justify-content: center;
+}
+
+.navbar-right {
+    justify-content: flex-end;
 }

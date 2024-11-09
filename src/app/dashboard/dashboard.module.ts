@@ -7,17 +7,25 @@ import { HeaderComponent } from './components/header/header.component';
 import { ReservasComponent } from './pages/reservas/reservas.component';
 import { EspaciosComponent } from './pages/espacios/espacios.component';
 
+import { ToastModule } from 'primeng/toast';
+import { MessageService } from 'primeng/api';
+
 @NgModule({
   declarations: [
     InicioComponent,
     HeaderComponent,
     ReservasComponent,
-    EspaciosComponent,
+    EspaciosComponent
+    
 
   ],
   imports: [
     CommonModule,
-    DashboardRoutingModule
+    DashboardRoutingModule,
+    ToastModule
+    
+  ], providers: [
+    MessageService
   ]
 })
 export class DashboardModule { }

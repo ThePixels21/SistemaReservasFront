@@ -1,9 +1,9 @@
 {
-    "/apiCustom/*": {
-        "target": "http://eure.activos.com.co:10501/JADM0074B/api/rest/usuario/cliente/gestionUsuarios/buscarSesion",
+    "/baseUrl/*": {
+        "target": "http://98.82.190.50:8000",
         "security": "false",
         "pathRewrite": {
-            "^/apiCustom/": "/"
+            "^/baseUrl/": "/"
         }
     }  
 }

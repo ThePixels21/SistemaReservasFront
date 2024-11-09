@@ -1,1 +1,22 @@
-<p>espacios works!</p>
+<div class="espacios-container">
+    <p-toast></p-toast>
+  <div class="card" *ngFor="let espacio of espacios">
+    <h3>{{ espacio.type }}</h3>
+    <p><strong>Capacidad:</strong> {{ espacio.capacity }}</p>
+    <p><strong>Tarifa por hora:</strong> {{ espacio.hourlyRate }}</p>
+    <!-- no muestra el estado porque es de schedules -->
+    
+    <!-- Detalles del horario -->
+    <div *ngIf="espacio.schedules && espacio.schedules.length > 0">
+        <p><strong>Horario:</strong></p>
+        <ul>
+            <li *ngFor="let schedule of espacio.schedules">
+                Desde: {{ schedule.opening_time }} - Hasta: {{ schedule.closing_time }}
+                <p><strong>Estado:</strong> {{ schedule.status }}</p>
+        </li>
+      </ul>     
+    </div>
+    
+    <button class="reserve-button" (click)="reservarEspacio(espacio)">Reservar</button>
+  </div>
+</div>

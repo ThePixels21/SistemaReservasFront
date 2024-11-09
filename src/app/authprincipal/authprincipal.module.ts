@@ -12,6 +12,8 @@ import { ProgressBarModule } from 'primeng/progressbar';
 import { DropdownModule } from 'primeng/dropdown';
 import { CalendarModule } from 'primeng/calendar';
 import { PasswordModule } from 'primeng/password';
+import { ToastModule } from 'primeng/toast';
+import { MessageService } from 'primeng/api';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,10 @@ import { PasswordModule } from 'primeng/password';
     DropdownModule,
     CalendarModule,
     PasswordModule,
-    FormsModule
+    FormsModule,
+    ToastModule
+  ], providers: [
+    MessageService
   ]
 })
 export class AuthprincipalModule { }
