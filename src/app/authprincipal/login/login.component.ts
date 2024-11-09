@@ -21,18 +21,20 @@ export class LoginComponent implements OnInit {
 
   // Método para manejar el login
   onLogin(): void {
-    console.log("login");
-    this.loading = true; // Establecer loading en true mientras se hace la solicitud
+    console.log("Iniciando sesión...");
+    this.loading = true;
+    
+    // Enviar los datos de login al AuthService
     this.authService.login(this.loginData).subscribe(
       (response) => {
-        this.loading = false; // Detener loading cuando se recibe respuesta
-        this.authService.storeToken(response.access_token); // Guardar el token
+        this.loading = false; // Detener el loading cuando la solicitud es exitosa
+        this.authService.storeToken(response.access_token); // Guardar el token en el localStorage
         alert('Inicio de sesión exitoso');
-        this.router.navigate(['/dashboard']); // Redirigir al dashboard
+        this.router.navigate(['/dashboard']); // Redirigir al dashboard después del login
       },
       (error) => {
-        this.loading = false; // Detener loading si ocurre un error
-        this.errors = error.error; // Mostrar los errores en la interfaz
+        this.loading = false; // Detener el loading si ocurre un error
+        this.errors = error.error; // Capturar el error de la respuesta
         alert('Error en el inicio de sesión');
       }
     );

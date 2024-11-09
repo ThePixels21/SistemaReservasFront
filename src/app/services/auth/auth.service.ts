@@ -27,10 +27,6 @@ export class AuthService extends BaseService {
     const body = {
       username: credentials.username,
       password: credentials.password,
-      grant_type: null,
-      scope: '',
-      client_id: null,
-      client_secret: null
     };
     return this.http.post(`${this.baseUrl}/login`, body, { headers });
   }

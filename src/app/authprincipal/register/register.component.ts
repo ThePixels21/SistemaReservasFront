@@ -35,7 +35,14 @@ export class RegisterComponent implements OnInit {
     }
 
     this.loading = true;
-    this.authService.register(this.registerData).subscribe(
+
+    // Agregar el rol de "User" automáticamente antes de enviar los datos
+    const userData = {
+      ...this.registerData,
+      role: 'User'  // Establecer el rol fijo como "User"
+    };
+
+    this.authService.register(userData).subscribe(
       (response) => {
         this.loading = false;
         alert('Registro exitoso');
@@ -55,9 +62,7 @@ export class RegisterComponent implements OnInit {
     this.errors = {};
   }
 
-
   navigateToLogin() {
     this.router.navigate(['/authprincipal/login']);
   }
-  
 }
