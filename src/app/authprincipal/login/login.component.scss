@@ -7,14 +7,14 @@
   min-height: 100vh;
   /* Altura completa de la pantalla */
   padding: 20px;
-  background-color: #beffc7;;
+  background-color: #ffe2cf;;
   /* Fondo suave */
 }
 
 /* Estilo para el título */
 .login-container h2 {
   font-size: 24px;
-  color: #3c7744;
+  color: #835f47;
   margin-bottom: 20px;
 }
 
@@ -22,7 +22,7 @@
 .login-container form {
   width: 100%;
   max-width: 400px;
-  background-color: #589460;
+  background-color: #835f47;
   padding: 30px;
   border-radius: 8px;
   box-shadow: 0 4px 12px #0000001a;
@@ -38,20 +38,21 @@
   display: block;
   font-weight: bold;
   margin-bottom: 5px;
-  color: #17301a;
+  color: #38271c;
 }
 
 .form-group .form-control.custom-input {
   width: 100%;
   padding: 10px;
   font-size: 16px;
-  border: 1px solid #ccc;
+  border: 1px solid #835f47;
   border-radius: 4px;
   outline: none;
+  background-color: #d3ad94;
 }
 
 .form-group .form-control.custom-input:focus {
-  border-color: #ffcc00;
+  border-color: #aa8268;
   /* Color de enfoque en el borde */
   box-shadow: 0 0 5px rgba(255, 204, 0, 0.5);
   /* Sombra */
@@ -70,8 +71,8 @@
   padding: 10px;
   font-size: 16px;
   font-weight: bold;
-  color: #17301a;
-  background-color: #beffc7;
+  color: #ad886f;
+  background-color: #4e3626;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -79,7 +80,8 @@
 }
 
 .custom-button:hover {
-  background-color: #ffb300;
+  background-color: #d8a583;
+  color: #4e3626;
 }
 
 /* Barra de progreso */
