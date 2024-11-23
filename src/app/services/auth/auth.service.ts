@@ -3,6 +3,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { BaseService } from '../base/base.service';
 import { environment } from 'src/app/environments/enviroment';
+import { User } from 'src/app/model/users/user';
 
 @Injectable({
   providedIn: 'root'
@@ -22,13 +23,10 @@ export class AuthService extends BaseService {
   }
 
   // Método para iniciar sesión (Login)
-  login(credentials: { username: string, password: string }): Observable<any> {
+  login(user: User): Observable<any> {
     const headers = this.getAuthHeaders();
-    const body = {
-      username: credentials.username,
-      password: credentials.password,
-    };
-    return this.http.post(`${this.baseUrl}/login`, body, { headers });
+    
+    return this.http.post(`${this.baseUrl}/login`, JSON.stringify(user), { headers });
   }
 
   // Guardar el token JWT en el localStorage
